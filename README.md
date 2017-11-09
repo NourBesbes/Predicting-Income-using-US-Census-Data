@@ -3,7 +3,7 @@ In this Exercice, the objective is to explore what kinds of employees will have 
 
 # Exploring the Dataset
 In order to understand better the dataset and the repartition of the variables, I made a series of plots describing continious variables,categorical variables and a correlation plot.
-# # Correlation plot
+## Correlation plot
 First, I Created a correlation plot in order to see if there is any relationship amongst the numerical variables and the income. However, income variable is a factor variable with levels +50000 and -50000 and is unable to be directly added to the correlation plot. Therefore, I made the income variable into a binary variable with levels 0 and 1 to overcome this problem.
 
 
@@ -17,10 +17,10 @@ Then, i wanted to explore the varibles capital Gain and capital loss, the best w
 
 In order to determine which feature had the biggest impact on the final class "income" of an individual i produced some visual data representation so i looked to what proportion of people earn more than 50K within different:workclass, education, martial status, race ,and sex.
 
-# # # Work Class
+### Work Class
 We can see from the table that the private sector has the largest number of population that earn more than 50k per year . However,in termns of proportion we observe from the graph that the "Self-employed incorporated" category has the biggest ratio of high earners.
 
-# # # Age
+### Age
 I used the command summary to determine the min, max , mean and the str to verify the type ...
 summary(train$age) str(train$age) 
 
@@ -32,7 +32,7 @@ Adults: (>20)
 
 We can observe from the graph that almost all the young people (age<20) have an income less than $50k. The category of Adult people earn more tha young people 
 
-# # # Sex
+### Sex
 Male employees are more competitive in terms of salary,if we look at the proportion of employees with more than 50k per year.However there is more female than male
 
 # # # Education
