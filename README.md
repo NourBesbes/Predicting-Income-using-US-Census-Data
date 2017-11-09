@@ -13,7 +13,7 @@ Then, i wanted to explore the varibles capital Gain and capital loss, the best w
 
 
 
-# # Explore Categorical Data
+## Explore Categorical Data
 
 In order to determine which feature had the biggest impact on the final class "income" of an individual i produced some visual data representation so i looked to what proportion of people earn more than 50K within different:workclass, education, martial status, race ,and sex.
 
@@ -35,14 +35,14 @@ We can observe from the graph that almost all the young people (age<20) have an 
 ### Sex
 Male employees are more competitive in terms of salary,if we look at the proportion of employees with more than 50k per year.However there is more female than male
 
-# # # Education
+### Education
 Most of the people earning more than 50k have a bachelor but the highest proportion of them are for those within the "Prof school" category (55%).
 
 
-# # # Race 
+### Race 
 We can observe from the graph that the Whites are always advantageous in salary,they have the largest proportion of people earning more than 50k 
 
-# # # Weeks worked
+### Weeks worked
 I first made a historgram describing the number of weeks worked 
 
 We can observe that there a are a large number of different values of number of weeks worked (histogram),I decided to groupe them into two categories. 
@@ -54,9 +54,9 @@ We can see that the more you work, the more you earn.The proportion of people wi
 # Classification
 I choosed to test the classification methods :  Decision Tree, Random Forest and Logistic Regression.
 at the end of each classification i defined the accuracy in order to evaluate them 
-# # Decision Tree
-# # Random Forest
-# # Logistic Regression
+## Decision Tree
+## Random Forest
+## Logistic Regression
 
 # Predictive model evaluation
 we conclude that the accuracy of the algorithms are roughly the same, but we can see a little improvement on the prediction of the ">50k" class.
