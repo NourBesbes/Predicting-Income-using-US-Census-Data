@@ -35,7 +35,7 @@ We can observe from the graph that almost all the young people (age<20) have an 
 ### Sex
 Male employees are more competitive in terms of salary,if we look at the proportion of employees with more than 50k per year.However there is more female than male
 
-### Education
+### Education
 Most of the people earning more than 50k have a bachelor but the highest proportion of them are for those within the "Prof school" category (55%).
 
 
