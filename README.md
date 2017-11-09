@@ -1,5 +1,5 @@
 # Predicting-Income-using-US-Census-Data
-In this Exercice, the objective is to explore what kinds of employees will have more possibilities to earn more than 50K USD per year using the US Census dataset which contains informations for approximately 300,000 people.
+In this Exercice, the objective is to explore what kinds of employees will have more possibilities to earn more than 50K USD per year using the US Census dataset which contains informations for approximately 300,000 people For each one, we have 42 socioeconomic variables.
 The steps of cleaning and exploring the data are described in the Cleaning and exploring Data.R file.
 The steps of The Classification are described in the Classification.R file.
 # Exploring the Dataset
@@ -66,25 +66,32 @@ We can see that the more you work, the more you earn.The proportion of people wi
 
 # Classification
 I choosed to test the classification methods :  Decision Tree, Random Forest and Logistic Regression.
-at the end of each classification i defined the accuracy in order to evaluate them 
+at the end of each classification i defined the accuracy in order to evaluate them.
+First we will want to split our training set into subsets for training and testing. We will do a 70/30 split
 ## Decision Tree
-
-![Alt text](./Plots/tree.png?raw=true)
-![Alt text](./Plots/tabtree.png?raw=true)
-
+I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.
+![Alt text](./Plots/DT.png?raw=true)
+I go the confusion matrix:
+![Alt text](./Plots/AccDT.png?raw=true)
+The Accuracy : 0.9515001 
 ## Random Forest
+I choosed to test Random Forest because it's robust to correlated covariates & outliers in general.I created a model with default parameters 
+I go the confusion matrix:
+![Alt text](./Plots/RF.png?raw=true)
+The Accuracy : 0.9516107 
 ## Logistic Regression
+I go the confusion matrix:
+![Alt text](./Plots/LR.png?raw=true)
+This Accuracy : 0.9546226 
 
 # Predictive model evaluation
 we conclude that the accuracy of the algorithms are roughly the same, but we can see a little improvement on the prediction of the ">50k" class.
 After training all these models using the training data, I chose to keep the Logistic Regression as the most accurate.
-
-
-RF:0.953088   DT:0.9536394 LR: 
-
-
+Finally, I was evaluated the Logistic Regression Model on the test set. By  the previous methodology we got the following confusion matrix:
+![Alt text](./Plots/test.png?raw=true)
+With Accuracy : 
 # Conclusion
-I divided the analysis into two parts, one serves the purpose of exploratory analysis and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.
+I divided the analysis into two parts, one serves the purpose of exploratory analysis and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.Therefore, I had to use the knowledge I acquired on coursera courses(Data Science Specialization by the Johns Hopkins University for example) for this part
 Finally, I have to say that this technical test was very interesting, I enjoyed working on it.
 
 
