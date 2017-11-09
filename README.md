@@ -56,7 +56,7 @@ I choosed to test the classification methods :  Decision Tree, Random Forest and
 at the end of each classification i defined the accuracy in order to evaluate them 
 ## Decision Tree
 ## Random Forest
-## Logistic Regression
+## Logistic Regression
 
 # Predictive model evaluation
 we conclude that the accuracy of the algorithms are roughly the same, but we can see a little improvement on the prediction of the ">50k" class.
