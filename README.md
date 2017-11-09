@@ -42,7 +42,7 @@ Most of the people earning more than 50k have a bachelor but the highest proport
 ### Race 
 We can observe from the graph that the Whites are always advantageous in salary,they have the largest proportion of people earning more than 50k 
 
-### Weeks worked
+### Weeks worked
 I first made a historgram describing the number of weeks worked 
 
 We can observe that there a are a large number of different values of number of weeks worked (histogram),I decided to groupe them into two categories. 
