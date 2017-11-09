@@ -1,6 +1,7 @@
 # Predicting-Income-using-US-Census-Data
 In this Exercice, the objective is to explore what kinds of employees will have more possibilities to earn more than 50K USD per year using the US Census dataset which contains informations for approximately 300,000 people.
-
+The steps of cleaning and exploring the data are described in the Cleaning and exploring Data.R file.
+The steps of The Classification are described in the Classification.R file.
 # Exploring the Dataset
 In order to understand better the dataset and the repartition of the variables, I made a series of plots describing continious variables,categorical variables and a correlation plot.
 ## Correlation plot
@@ -67,6 +68,10 @@ We can see that the more you work, the more you earn.The proportion of people wi
 I choosed to test the classification methods :  Decision Tree, Random Forest and Logistic Regression.
 at the end of each classification i defined the accuracy in order to evaluate them 
 ## Decision Tree
+
+![Alt text](./Plots/tree.png?raw=true)
+![Alt text](./Plots/tabtree.png?raw=true)
+
 ## Random Forest
 ## Logistic Regression
 
