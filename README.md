@@ -11,7 +11,8 @@ First, I Created a correlation plot in order to see if there is any relationship
 
 ## Explore Categorical Data
 
-In order to determine which feature had the biggest impact on the final class "income" of an individual i produced some visual data representation so i looked to what proportion of people earn more than 50K within different:workclass, education, martial status, race ,and sex.
+In order to determine which feature had the biggest impact on the final class "income" of an individual i produced some visual data representation so i looked to what proportion of people earn more than 50K within different: workclass, Age, 
+Sex, education ,race and Weeks worked.
 
 ### Work Class
 We can see from the table that the private sector has the largest number of population that earn more than 50k per year . However,in termns of proportion we observe from the graph that the "Self-employed incorporated" category has the biggest ratio of high earners.
@@ -20,8 +21,7 @@ We can see from the table that the private sector has the largest number of popu
 
 ![Alt text](./Plots/TableWorkClass.png?raw=true)
 ### Age
-I used the command summary to determine the min, max , mean and the str to verify the type ...
-summary(train$age) str(train$age) 
+I used the command summary to determine the min, max , mean .. summary(train$age)
 
 ![Alt text](./Plots/ageSummary.png?raw=true)
 
@@ -32,10 +32,10 @@ Adults: (>20)
 
 ![Alt text](./Plots/Age.png?raw=true)
 
-We can observe from the graph that almost all the young people (age<20) have an income less than $50k. The category of Adult people earn more tha young people 
+We can observe from the graph that almost all the young people (age<20) have an income less than $50k. The category of Adult people earn more than young people 
 
 ### Sex
-Male employees are more competitive in terms of salary,if we look at the proportion of employees with more than 50k per year.However there is more female than male
+Male employees are more competitive in terms of salary,if we look at the proportion of employees with more than 50k per year.However there is more female than male.
 
 ![Alt text](./Plots/sex.png?raw=true)
 
@@ -52,7 +52,7 @@ We can observe from the graph that the Whites are always advantageous in salary,
 ![Alt text](./Plots/races.png?raw=true)
 
 ### Weeks worked
-I first made a historgram describing the number of weeks worked 
+I first made a historgram describing the number of weeks worked. 
 
 ![Alt text](./Plots/histWeek.png?raw=true)
 
@@ -66,8 +66,8 @@ We can see that the more you work, the more you earn.The proportion of people wi
 
 # Classification
 I choosed to test the classification methods :  Decision Tree, Random Forest and Logistic Regression.
-at the end of each classification i defined the accuracy in order to evaluate them.
-First we will want to split our training set into subsets for training and testing. We will do a 70/30 split
+at the end of each classification i defined the accuracy in order to evaluate them.<br/>
+First i will split the training set into subsets for training and testing. We will do a 70/30 split
 ## Decision Tree
 I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.<br/>
 ![Alt text](./Plots/DT.png?raw=true)
@@ -85,6 +85,7 @@ I go the confusion matrix:<br/>
 ![Alt text](./Plots/RF.png?raw=true)<br/>
 The Accuracy : 0.9516107 
 ## Logistic Regression
+I choosed to Test Logistic regression because it is pretty robust to noise and help to avoid overfitting.Besides,the output will be interpreted as a probability. 
 I go the confusion matrix:<br/>
 ![Alt text](./Plots/LR.png?raw=true)<br/>
 This Accuracy : <b>0.9546226 </b>
@@ -92,11 +93,11 @@ This Accuracy : <b>0.9546226 </b>
 # Predictive model evaluation
 we conclude that the accuracy of the algorithms are roughly the same, but we can see a little improvement on the prediction of the ">50k" class.<br/>
 After training all these models using the training data, I chose to keep the Logistic Regression as the most accurate.
-Finally, I was evaluated the Logistic Regression Model on the test set. By  the previous methodology we got the following confusion matrix:<br/>
+Finally, I evaluated the Logistic Regression Model on the test set. By  the previous methodology we got the following confusion matrix:<br/>
 ![Alt text](./Plots/test.png?raw=true)
 
 # Conclusion
-I divided the analysis into two parts, one serves the purpose of exploratory analysis and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.Therefore, I had to use the knowledge I acquired on coursera courses(Data Science Specialization by the Johns Hopkins University for example) for this part.<br/>
+I divided the analysis into two parts, one for exploring the data and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.Therefore, I had to use the knowledge I acquired on coursera courses(Data Science Specialization by the Johns Hopkins University) for this part.<br/>
 Finally, I have to admit that this technical test was very interesting, I enjoyed working on it.
 
 
