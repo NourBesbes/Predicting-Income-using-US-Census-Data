@@ -69,9 +69,9 @@ I choosed to test the classification methods :  Decision Tree, Random Forest and
 at the end of each classification i defined the accuracy in order to evaluate them.
 First we will want to split our training set into subsets for training and testing. We will do a 70/30 split
 ## Decision Tree
-I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.
+I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.<br/>
 ![Alt text](./Plots/DT.png?raw=true)
-I go the confusion matrix:
+I go the confusion matrix:<br/>
 ![Alt text](./Plots/AccDT.png?raw=true)
 The Accuracy : 0.9515001 
 ## Random Forest
@@ -79,23 +79,23 @@ I choosed to test Random Forest because it's robust to correlated covariates & o
 randomForest(formula = income ~ ., data = training) 
                Type of random forest: classification
                      Number of trees: 500
-No. of variables tried at each split: 4
-I go the confusion matrix:
+No. of variables tried at each split: 4<br/>
+I go the confusion matrix:<br/>
 ![Alt text](./Plots/RF.png?raw=true)
 The Accuracy : 0.9516107 
 ## Logistic Regression
-I go the confusion matrix:
+I go the confusion matrix:<br/>
 ![Alt text](./Plots/LR.png?raw=true)
-This Accuracy : 0.9546226 
+This Accuracy : <b>0.9546226 </b>
 
 # Predictive model evaluation
-we conclude that the accuracy of the algorithms are roughly the same, but we can see a little improvement on the prediction of the ">50k" class.
+we conclude that the accuracy of the algorithms are roughly the same, but we can see a little improvement on the prediction of the ">50k" class.<br/>
 After training all these models using the training data, I chose to keep the Logistic Regression as the most accurate.
-Finally, I was evaluated the Logistic Regression Model on the test set. By  the previous methodology we got the following confusion matrix:
+Finally, I was evaluated the Logistic Regression Model on the test set. By  the previous methodology we got the following confusion matrix:<br/>
 ![Alt text](./Plots/test.png?raw=true)
-With Accuracy : 
+
 # Conclusion
-I divided the analysis into two parts, one serves the purpose of exploratory analysis and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.Therefore, I had to use the knowledge I acquired on coursera courses(Data Science Specialization by the Johns Hopkins University for example) for this part
+I divided the analysis into two parts, one serves the purpose of exploratory analysis and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.Therefore, I had to use the knowledge I acquired on coursera courses(Data Science Specialization by the Johns Hopkins University for example) for this part.<br/>
 Finally, I have to say that this technical test was very interesting, I enjoyed working on it.
 
 
