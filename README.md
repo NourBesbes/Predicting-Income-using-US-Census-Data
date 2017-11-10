@@ -72,7 +72,7 @@ First we will want to split our training set into subsets for training and testi
 I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.<br/>
 ![Alt text](./Plots/DT.png?raw=true)
 I go the confusion matrix:<br/>
-![Alt text](./Plots/AccDT.png?raw=true)
+![Alt text](./Plots/AccDT.png?raw=true)<br/>
 The Accuracy : 0.9515001 
 ## Random Forest
 I choosed to test Random Forest because it's robust to correlated covariates & outliers in general.I created a model with default parameters :</br>
@@ -81,11 +81,11 @@ randomForest(formula = income ~ ., data = training)
                      Number of trees: 500
 No. of variables tried at each split: 4<br/>
 I go the confusion matrix:<br/>
-![Alt text](./Plots/RF.png?raw=true)
+![Alt text](./Plots/RF.png?raw=true)<br/>
 The Accuracy : 0.9516107 
 ## Logistic Regression
 I go the confusion matrix:<br/>
-![Alt text](./Plots/LR.png?raw=true)
+![Alt text](./Plots/LR.png?raw=true)<br/>
 This Accuracy : <b>0.9546226 </b>
 
 # Predictive model evaluation
@@ -96,7 +96,7 @@ Finally, I was evaluated the Logistic Regression Model on the test set. By  the 
 
 # Conclusion
 I divided the analysis into two parts, one serves the purpose of exploratory analysis and the other presents several classification models.The most challenging part for me was cleaning and exploring the data, it was the longest part and the most important to my opinion.Therefore, I had to use the knowledge I acquired on coursera courses(Data Science Specialization by the Johns Hopkins University for example) for this part.<br/>
-Finally, I have to say that this technical test was very interesting, I enjoyed working on it.
+Finally, I have to admit that this technical test was very interesting, I enjoyed working on it.
 
 
 
