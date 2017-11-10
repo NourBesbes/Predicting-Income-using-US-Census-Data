@@ -69,7 +69,7 @@ I choosed to test the classification methods :  Decision Tree, Random Forest and
 at the end of each classification i defined the accuracy in order to evaluate them.
 First we will want to split our training set into subsets for training and testing. We will do a 70/30 split
 ## Decision Tree
-I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.<br/><br/>
+I created a simple decision tree with default parameters,as a result i got a  simple tree (9 leaves) . The attributes  selected to classify the data : WeeksWorkedInYear,dividendsFromStocks, taxFiler, education, capitalGain,capitalLoss and sex.<br/>
 ![Alt text](./Plots/DT.png?raw=true)
 <br/>
 I go the confusion matrix:<br/>
